@@ -22,7 +22,7 @@
 
     margin:0;
 
-    &.navbar-inverse{
+    &.navbar-dark{
 
         background-image: none;
         font-size:12px;
@@ -37,7 +37,7 @@
               font-weight: 400;
             }
 
-            .divider {
+            .dropdown-divider {
                 background-color: #333;
             }
 
@@ -95,7 +95,7 @@
           font-weight: 600;
         }
 
-        .navbar-toggle {
+        .navbar-toggler {
             border-color:#1f2223;
             color:@navbar-toggle-color;
             margin-top: 20px;
@@ -186,12 +186,12 @@
         margin-right: 0;
     }
 
-    .navbar.navbar-inverse .navbar-nav>li>a {
+    .navbar.navbar-dark .navbar-nav>li>a {
         line-height: 70px;
         padding-top: 5px;
     }
 
-    .navbar.navbar-inverse .dropdown-menu>li>a {
+    .navbar.navbar-dark .dropdown-menu>li>a {
         line-height: 20px;
         padding-top: 6px;
         padding-bottom: 6px;
@@ -296,26 +296,26 @@
 
 /* Medium devices (desktops, 992px and up)*/
 @media (min-width: @screen-md) {
-    .navbar-inverse #main-nav {
+    .navbar-dark #main-nav {
         border-right: none;
     }
 
-    .navbar-inverse #main-nav .nav>li>a {
+    .navbar-dark #main-nav .nav>li>a {
         border-left: none;
     }
 
-    .navbar.navbar-inverse .navbar-admin > li > a > i{
+    .navbar.navbar-dark .navbar-admin > li > a > i{
         display: none;
     }
 }
 
 /* Medium devices (desktops, 992px and up)*/
 @media (min-width: @screen-lg) {
-    .navbar.navbar-inverse .navbar-admin > li > a > i{
+    .navbar.navbar-dark .navbar-admin > li > a > i{
         display: inline-block;
     }
 
-    .navbar.navbar-inverse{
+    .navbar.navbar-dark{
         font-size: 14px;
     }
 }

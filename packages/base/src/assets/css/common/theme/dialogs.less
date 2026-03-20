@@ -14,9 +14,9 @@
  * Copyright 2015 ForgeRock AS.
  */
 
-.bootstrap-dialog {
-
-    .bootstrap-dialog-title {
+// Bootstrap 5 modal theme overrides
+.modal {
+    .modal-title {
         font-weight: 600;
     }
 
@@ -24,7 +24,8 @@
         border-color: transparent;
     }
 
-    &.type-primary .modal-header, &.type-default .modal-header {
+    &.type-primary .modal-header,
+    &.type-default .modal-header {
         color: @base-theme-color;
     }
 
@@ -32,13 +33,12 @@
         color: @failure-color;
     }
 
-    &.type-danger .btn-default{
+    &.type-danger .btn-secondary {
         color: @failure-color;
         border-color: @failure-color;
     }
 
-    // IDM only - AM is using the inherited color which in this case is text-default
-    &.type-default .bootstrap-dialog-title {
+    &.type-default .modal-title {
         color: @base-theme-color;
     }
 }

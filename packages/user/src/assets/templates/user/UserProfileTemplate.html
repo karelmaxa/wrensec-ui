@@ -6,14 +6,14 @@
     </div>
     <div class="tab-menu">
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#userDetailsTab" role="tab" data-toggle="tab">{{t "common.user.basicInfo"}}</a></li>
-            <li role="presentation"><a href="#userPasswordTab" role="tab" data-toggle="tab">{{t "common.user.password"}}</a></li>
+            <li role="presentation" class="nav-item"><a class="nav-link active" href="#userDetailsTab" role="tab" data-bs-toggle="tab">{{t "common.user.basicInfo"}}</a></li>
+            <li role="presentation" class="nav-item"><a class="nav-link" href="#userPasswordTab" role="tab" data-bs-toggle="tab">{{t "common.user.password"}}</a></li>
         </ul>
     </div>
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active panel panel-default fr-panel-tab" id="userDetailsTab">
-            <form class="form-horizontal" id="details" data-form-validate="true">
-                <div class="panel-body">
+        <div role="tabpanel" class="tab-pane active card fr-panel-tab" id="userDetailsTab">
+            <form class="row g-3" id="details" data-form-validate="true">
+                <div class="card-body">
 
                     {{!-- Edit the below template to align with your actual user model. --}}
                     {{#user}}
@@ -57,17 +57,17 @@
                     {{/user}}
 
                 </div>
-                <div class="panel-footer clearfix">
+                <div class="card-footer clearfix">
                     {{> form/_basicSaveReset}}
                 </div>
             </form>
         </div>
 
-        <div role="tabpanel" class="tab-pane panel panel-default fr-panel-tab" id="userPasswordTab">
-            <form class="form-horizontal" id="password">
-                <div class="panel-body">
-                    <div class="form-group" data-form-group>
-                        <label class="col-sm-3 control-label" for="input-password">{{t "common.user.newPassword"}}</label>
+        <div role="tabpanel" class="tab-pane card fr-panel-tab" id="userPasswordTab">
+            <form class="row g-3" id="password">
+                <div class="card-body">
+                    <div class="form-group row" data-form-group>
+                        <label class="col-sm-3 col-form-label" for="input-password">{{t "common.user.newPassword"}}</label>
                         <div class="col-sm-6">
                             <input class="form-control" type="password" id="input-password" name="password" value=""
                                 data-validation-dependents="input-confirmPassword" data-validator-event="keyup" data-validator="required" />
@@ -75,8 +75,8 @@
                             <span class="form-control-feedback"><i class='fa validation-icon'></i></span>
                         </div>
                     </div>
-                    <div class="form-group" data-form-group>
-                        <label class="col-sm-3 control-label" for="input-confirmPassword">{{t 'common.user.confirmNewPassword'}}</label>
+                    <div class="form-group row" data-form-group>
+                        <label class="col-sm-3 col-form-label" for="input-confirmPassword">{{t 'common.user.confirmNewPassword'}}</label>
                         <div class="col-sm-6">
                             <input class="form-control" type="password" id="input-confirmPassword" value=""
                                 data-validator="passwordConfirm" data-validator-event="keyup" passwordField="input-password" />
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-footer clearfix">
+                <div class="card-footer clearfix">
                     {{> form/_basicSaveReset}}
                 </div>
             </form>

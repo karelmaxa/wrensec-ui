@@ -52,7 +52,6 @@ require.config({
         handlebars: "libs/handlebars",
         moment: "libs/moment",
         bootstrap: "libs/bootstrap",
-        "bootstrap-dialog": "libs/bootstrap-dialog",
         placeholder: "libs/jquery.placeholder"
     },
 
@@ -90,10 +89,8 @@ require.config({
             exports: "spin"
         },
         bootstrap: {
-            deps: ["jquery"]
-        },
-        'bootstrap-dialog': {
-            deps: ["jquery", "underscore","backbone", "bootstrap"]
+            deps: ["jquery"],
+            exports: "bootstrap"
         },
         placeholder: {
             deps: ["jquery"]

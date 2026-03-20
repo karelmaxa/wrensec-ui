@@ -14,60 +14,59 @@
  * Copyright 2015 ForgeRock AS.
  */
 
-.panel-default>.panel-heading {
+.card>.card-header {
     background-color: transparent;
     padding: 15px;
 }
 
-.panel-collapse .panel-body {
+.card-collapse .card-body {
     padding-left: 33px;
 }
-.panel-collapse>.panel-heading {
+.card-collapse>.card-header {
     background-color: transparent;
     border-color: transparent;
 }
 
-.panel-default {
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+.card {
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
-.panel-title {
+.card-title {
     font-weight: normal;
     letter-spacing: 1px;
 }
 
-.panel-collapse .panel-title>a {
+.card-collapse .card-title>a {
     color: @base-theme-color;
 }
 
-.panel-title a:focus {
+.card-title a:focus {
     color: @base-theme-color;
     text-decoration: none;
 }
 
-.panel-title a:hover {
+.card-title a:hover {
     color: @panel-hover-color;
     text-decoration: none;
 }
 
-.panel .nav-list>li:last-child>a {
+.card .nav-list>li:last-child>a {
     border-bottom: none;
 }
 
-.panel-footer {
+.card-footer {
     background-color: #fff;
 }
 
-.panel-default.panel-collapse {
+.card.card-collapse {
     border-bottom: 1px solid #eee;
 }
 
-.panel-default.panel-collapse:last-child {
+.card.card-collapse:last-child {
     border-bottom: none;
 }
 
-.fr-panel-with-border.panel-collapse:last-child  {
+.fr-panel-with-border.card-collapse:last-child  {
     border: 1px solid #ddd;
 }
 
@@ -80,15 +79,15 @@
 }
 
 .fr-panel-scrollable {
-  .panel-body {
+  .card-body {
     max-height: 300px;
     overflow: auto;
   }
 
-  .panel-heading {
+  .card-header {
     border-bottom: 0px;
 
-    .panel-title {
+    .card-title {
       font-weight: bold;
     }
   }

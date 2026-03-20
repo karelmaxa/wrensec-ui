@@ -62,7 +62,7 @@ define([
                 if (a.type === "submit") {
                     a.buttonClass = "btn-primary";
                 } else {
-                    a.buttonClass = "btn-default";
+                    a.buttonClass = "btn-secondary";
                 }
                 return a;
             });

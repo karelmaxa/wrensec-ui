@@ -30,7 +30,8 @@ define([
         AbstractView,
         Configuration,
         Constants,
-        EventManager) {
+        EventManager,
+        bootstrap) {
 
     /**
      * Manages the tabs and routing amongst them for the user's profile
@@ -106,7 +107,7 @@ define([
                 $.when.apply($, _.map(this.dynamicTabs, _.bind(function (tab) {
                     var promise = $.Deferred(),
                         tabDetail = tab.getTabDetail(),
-                        tabPanel = $('<div role="tabpanel" class="tab-pane panel panel-default fr-panel-tab">');
+                        tabPanel = $('<div role="tabpanel" class="tab-pane card fr-panel-tab">');
                     tabPanel.attr('id', tabDetail.panelId);
                     this.$el.find(".tab-content").append(tabPanel);
                     tab.element = tabPanel[0];
@@ -114,7 +115,7 @@ define([
                     tab.render(_.cloneDeep(this.data), _.bind(function () {
                         this.$el.find(".nav-tabs").append(
                             $('<li role="presentation">').append(
-                                $('<a href="#'+tabDetail.panelId+'" role="tab" data-toggle="tab">')
+                                $('<a href="#'+tabDetail.panelId+'" role="tab" data-bs-toggle="tab">')
                                     .text(tabDetail.label)
                             )
                         );
@@ -129,7 +130,7 @@ define([
                         tab.reloadFormData(_.cloneDeep(this.data.user));
                     }, this));
 
-                    selectedTab.tab('show');
+                    new bootstrap.Tab(selectedTab[0]).show();
                     this.$el.find("#" + selectedTabId).find(":input:not([readonly]):first").focus();
                     if (callback) {
                         callback();

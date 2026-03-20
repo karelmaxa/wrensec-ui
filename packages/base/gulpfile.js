@@ -25,7 +25,7 @@ const { join } = require("path");
 
 const MODULE_RESOURCES = {
     "@mstyk/jquery-placeholder": "libs/jquery.placeholder.js",
-    "@selectize/selectize/dist/css/selectize.bootstrap3.css": "css/selectize.css",
+    "@selectize/selectize/dist/css/selectize.bootstrap5.css": "css/selectize.css",
     "@selectize/selectize/dist/js/selectize.min.js": "libs/selectize.js",
     "backbone-relational/backbone-relational.js": "libs/backbone-relational.js",
     "backbone.paginator/lib/backbone.paginator.min.js": "libs/backbone.paginator.js",
@@ -37,9 +37,8 @@ const MODULE_RESOURCES = {
     "backgrid-select-all/backgrid-select-all.min.js": "libs/backgrid-select-all.js",
     "backgrid/lib/backgrid.min.css": "css/backgrid.css",
     "backgrid/lib/backgrid.min.js": "libs/backgrid.js",
-    "bootstrap-dialog/dist/css/bootstrap-dialog.min.css": "css/bootstrap-dialog.css",
-    "bootstrap-dialog/dist/js/bootstrap-dialog.min.js": "libs/bootstrap-dialog.js",
-    "bootstrap/dist/js/bootstrap.min.js": "libs/bootstrap.js",
+    "bootstrap/dist/css/bootstrap.min.css": "css/bootstrap-core.css",
+    "bootstrap/dist/js/bootstrap.bundle.min.js": "libs/bootstrap.js",
     "create-react-class/create-react-class.min.js": "libs/create-react-class.js",
     "dragula/dist/dragula.min.js": "libs/dragula.js",
     "font-awesome/css/font-awesome.min.css": "css/fontawesome/css/font-awesome.css",
@@ -95,7 +94,7 @@ gulp.task("build:libs", async () => {
 });
 
 gulp.task("build:styles", useLessStyles({
-    "dist/css/bootstrap/bootstrap.less": "css/bootstrap.css"
+    "dist/css/bootstrap/bootstrap.less": "css/bootstrap-overrides.css"
 }));
 
 gulp.task("build", gulp.series(

@@ -259,7 +259,7 @@ define([
                             cellView.render();
 
                             if (!_.isEmpty(_.omit(cellView.events, "click"))) {
-                                cellWrapper = $("<p class='pull-right show'></p>");
+                                cellWrapper = $("<p class='float-end show'></p>");
 
                                 if (cellView.$el.html().length && !hideColumnLabels && col.label) {
                                     cellWrapper.append(label);

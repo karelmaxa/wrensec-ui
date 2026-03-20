@@ -558,11 +558,11 @@ define([
     obj.confirmDialog = function(message, type, confirmCallback, overrides){
         overrides = overrides || {};
 
-        ModuleLoader.load("bootstrap-dialog").then(function (BootstrapDialog) {
-            var btnType = "btn-" +type;
+        ModuleLoader.load("org/forgerock/commons/ui/common/components/BootstrapDialog").then(function (BootstrapDialog) {
+            var btnType = "btn-" + type;
 
             if (type === "default") {
-                btnType = "btn-primary";
+                btnType = "btn-secondary";
             }
 
             BootstrapDialog.show({

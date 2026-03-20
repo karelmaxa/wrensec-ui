@@ -11,8 +11,8 @@
         <div class="col-md-9">
             <section class="resource-section">
                 <h1 id="colors">Colors</h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="swatch" style="background-color:#eeea07;">
@@ -100,9 +100,9 @@
                 <h1 id="typography">
                     Typography
                 </h1>
-                <div class="panel panel-default">
+                <div class="card">
 <!--HTML intentionally unindented to remove whitespace in snippets-->
-<div class="snippet panel-body">
+<div class="snippet card-body">
     <h1>H1 Header Example</h1>
     <h2>H2 Header Example</h2>
     <h3>H3 Header Example</h3>
@@ -119,15 +119,15 @@
                 <h1 id="tabs">
                     Nav Tabs
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Basic Tabs
                         </h4>
 <div class="snippet">
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab 1</a></li>
-        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab 2</a></li>
+        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-bs-toggle="tab">Tab 1</a></li>
+        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-bs-toggle="tab">Tab 2</a></li>
     </ul>
 
     <div class="tab-content">
@@ -143,34 +143,34 @@
                 </div>
                 <div class="example">
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Tab With Panel
                         </h4>
 <div class="snippet">
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#tabpanel1" aria-controls="tabpanel1" role="tab" data-toggle="tab">Tab Panel 1</a></li>
-        <li role="presentation"><a href="#tabpanel2" aria-controls="tabpanel2" role="tab" data-toggle="tab">Tab Panel 2</a></li>
+        <li role="presentation" class="active"><a href="#tabpanel1" aria-controls="tabpanel1" role="tab" data-bs-toggle="tab">Tab Panel 1</a></li>
+        <li role="presentation"><a href="#tabpanel2" aria-controls="tabpanel2" role="tab" data-bs-toggle="tab">Tab Panel 2</a></li>
     </ul>
 
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="tabpanel1">
-            <div class="panel panel-default fr-panel-tab">
-                <div class="panel-body">
+            <div class="card fr-panel-tab">
+                <div class="card-body">
                     Body
                 </div>
-                <div class="panel-footer">
+                <div class="card-footer">
                     Footer
                 </div>
             </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="tabpanel2">
-            <div class="panel panel-default fr-panel-tab">
-                <div class="panel-body">
+            <div class="card fr-panel-tab">
+                <div class="card-body">
                     Body 2
                 </div>
-                <div class="panel-footer">
+                <div class="card-footer">
                     Footer 2
                 </div>
             </div>
@@ -186,16 +186,16 @@
                 <h1 id="panels">
                     Panels
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Default Panel
                         </h4>
 <div class="snippet">
-    <div class="panel panel-default">
-        <div class="panel-body">
+    <div class="card">
+        <div class="card-body">
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
         </div>
     </div>
 </div>
@@ -209,8 +209,8 @@
                     Toggles
                 </h1>
                 <p class="text-muted">Library: <a href="http://kleinejan.github.io/titatoggle/">http://kleinejan.github.io/titatoggle/</a></p>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Toggles <span class="admin-only">Admin Only</span>
                         </h4>
@@ -246,29 +246,29 @@
                 <h1 id="buttons">
                     Buttons
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">Normal Button Group</h4>
 <div class="snippet">
     <div class="btn-group">
-        <button type="button" class="btn btn-default active">One</button>
-        <button type="button" class="btn btn-default">Two</button>
-        <button type="button" class="btn btn-default">Three</button>
+        <button type="button" class="btn btn-secondary active">One</button>
+        <button type="button" class="btn btn-secondary">Two</button>
+        <button type="button" class="btn btn-secondary">Three</button>
     </div>
 </div>
                     </div>
                 </div>
                 <div class="example">
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">Dark Button Group <span class="admin-only">Admin Only</span></h4>
 <div class="snippet">
-    <div class="btn-group btn-icon" data-toggle="btns">
-        <a class="btn toggle-view-btn fr-btn-secondary active" href="#connectorCardContainer" data-toggle="tab">
+    <div class="btn-group btn-icon" data-bs-toggle="btns">
+        <a class="btn toggle-view-btn fr-btn-secondary active" href="#connectorCardContainer" data-bs-toggle="tab">
             <i class="fa fa-th"></i>
         </a>
-        <a class="btn toggle-view-btn fr-btn-secondary" href="#connectorGridContainer" data-toggle="tab">
+        <a class="btn toggle-view-btn fr-btn-secondary" href="#connectorGridContainer" data-bs-toggle="tab">
             <i class="fa fa-list"></i>
         </a>
     </div>
@@ -277,12 +277,12 @@
                 </div>
                 <div class="example">
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">Button Types</h4>
 <div class="snippet">
-    <button type="button" class="btn btn-default">Default</button>
-    <button type="button" class="btn btn-default disabled">Default Disable</button>
+    <button type="button" class="btn btn-secondary">Default</button>
+    <button type="button" class="btn btn-secondary disabled">Default Disable</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-primary disabled">Primary</button>
     <button type="button" class="btn btn-danger">Danger</button>
@@ -297,8 +297,8 @@
                 <h1 id="alerts">
                     Alerts
                 </h1>
-                <div class="panel panel-default">
-<div class="snippet panel-body">
+                <div class="card">
+<div class="snippet card-body">
     <div class="alert alert-message alert-success" role="alert">
         <i class="alert-message-icon"></i>Sucess
     </div>
@@ -319,8 +319,8 @@
                 <h1 id="selectize">
                     Selectize
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Normal Selectize
                         </h4>
@@ -340,8 +340,8 @@
     });
 </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">
                             Pill Selectize
                         </h4>
@@ -367,8 +367,8 @@
                 <h1 id="grids">
                     Grids
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">Backgrid</h4>
 <div class="snippet">
     <table class="backgrid table">
@@ -405,12 +405,12 @@
                 <h1 id="headers">
                     Headers
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="sub-header">Page Information Header</h4>
 <div class="snippet">
     <div class="page-header clearfix">
-        <span class="header-icon pull-left"><i class="fa fa-rocket"></i></span>
+        <span class="header-icon float-start"><i class="fa fa-rocket"></i></span>
         <h4 class="page-type">Sub page header</h4>
         <div class="page-header-button-group">
             <a href="#mapping/add/connector/ldap">
@@ -419,7 +419,7 @@
                 </button>
             </a>
             <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle btn-actions" data-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-secondary dropdown-toggle btn-actions" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-ellipsis-v fa-lg"></i>
                 </button>
                 <ul class="dropdown-menu pull-rightAd" role="menu">
@@ -439,12 +439,12 @@
                 <h1 id="forms">
                     Forms
                 </h1>
-                <div class="panel panel-default">
-<div class="snippet panel-body">
-    <form class="form-horizontal" id="userProfileForm">
+                <div class="card">
+<div class="snippet card-body">
+    <form class="row g-3" id="userProfileForm">
         <h4 class="page-type">Error form field</h4>
         <div class="form-group has-feedback has-error">
-            <label class="col-sm-3 control-label" for="error">Error</label>
+            <label class="col-sm-3 col-form-label" for="error">Error</label>
             <div class="col-sm-6">
                 <input class="form-control" type="text" id="error" name="error" value="" autofocus="" data-validation-status="error" required="" data-original-title="" title=""/>
                 <div class="validation-message"></div>
@@ -456,12 +456,12 @@
                 </div>
                 <div class="example">
                 </div>
-                <div class="panel panel-default">
-<div class="snippet panel-body">
-    <form class="form-horizontal" id="userProfileForm">
+                <div class="card">
+<div class="snippet card-body">
+    <form class="row g-3" id="userProfileForm">
         <h4 class="page-type">Normal form field</h4>
         <div class="form-group has-feedback">
-            <label class="col-sm-3 control-label" for="normal">Normal</label>
+            <label class="col-sm-3 col-form-label" for="normal">Normal</label>
             <div class="col-sm-6">
                 <input class="form-control" type="text" id="normal" name="normal" value="" autofocus=""  required="" data-original-title="" title="">
                 <div class="validation-message"></div>
@@ -469,7 +469,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-3 control-label" for="checkboxSlider">Active</label>
+            <label class="col-sm-3 col-form-label" for="checkboxSlider">Active</label>
             <div class="col-sm-6">
                 <div class="control-group">
                     <div class="checkbox checkbox-slider-primary checkbox-slider checkbox-slider--b">
@@ -491,32 +491,22 @@
                 <h1 id="dialog">
                     Dialog
                 </h1>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="page-type">Normal Dialog</h4>
 <div class="snippet">
-    <div class="bootstrap-dialog type-default">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="bootstrap-dialog-header">
-                        <div class="bootstrap-dialog-close-button" style="display: block;"><button class="close">×</button></div>
-                        <div class="bootstrap-dialog-title">Normal Dialog</div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="bootstrap-dialog-body">
-                        <div class="bootstrap-dialog-message">Some text here</div>
-                    </div>
-                </div>
-                <div class="modal-footer" style="display: block;">
-                    <div class="bootstrap-dialog-footer">
-                        <div class="bootstrap-dialog-footer-buttons">
-                            <button class="btn btn-default">Cancel</button>
-                            <button class="btn btn-primary">Ok</button>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Normal Dialog</h4>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Some text here</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-primary">Ok</button>
             </div>
         </div>
     </div>
@@ -525,32 +515,22 @@
                 </div>
                 <div class="example">
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <h4 class="page-type">Delete Dialog</h4>
 <div class="snippet">
-    <div class="bootstrap-dialog type-danger">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="bootstrap-dialog-header">
-                        <div class="bootstrap-dialog-close-button" style="display: block;"><button class="close">×</button></div>
-                        <div class="bootstrap-dialog-title">Danger Dialog</div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="bootstrap-dialog-body">
-                        <div class="bootstrap-dialog-message">Some text here</div>
-                    </div>
-                </div>
-                <div class="modal-footer" style="display: block;">
-                    <div class="bootstrap-dialog-footer">
-                        <div class="bootstrap-dialog-footer-buttons">
-                            <button class="btn btn-default">Cancel</button>
-                            <button class="btn btn-danger">Ok</button>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-danger">
+                <h4 class="modal-title">Danger Dialog</h4>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Some text here</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-danger">Ok</button>
             </div>
         </div>
     </div>
